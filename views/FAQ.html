@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Martian greenhouse project - home</title>
+	<script type=”text/javascript” src=”/javascript/javascript.js”></script>
+	<link rel="stylesheet" href="/style/style2.css">
+  <link rel="icon" href="/gallery/logo.png">
+</head>
+
+
+<body>
+	<!--header--->
+	<header>
+		<img src="/gallery/logo.png" alt="logo">
+		<a href="#" class="logo">Martian greenhouse project</a>
+		<div class="bx bx-menu" id="menu-icon"></div>
+
+		<ul class="navbar">
+			<li><a href="/index.html">Strona główna</a></li>
+            <li><a href="/views/home.html">Home</a></li>
+			<li><a href="/views/szklarnia.html">O szklarni</a></li>
+			<li><a href="/views/pomiary.html">Pomiary</a></li>
+			<li><a href="/views/wyniki.html">Wyniki</a></li>
+            <li><a href="/views/badania.html">Badania</a></li>
+            <li><a href="/views/kontakt.html">Kontakt</a></li>
+            <li><a href="/views/FAQ.html">FAQ</a></li>
+		</ul>
+	</header>
+
+	<section class="faq">
+	<ul>
+		<li>
+		  <h3>Pytanie 1</h3>
+		  <div class="answer">Odpowiedź 1</div>
+		</li>
+		<li>
+		  <h3>Pytanie 2</h3>
+		  <div class="answer">Odpowiedź 2</div>
+		</li>
+		<li>
+			<h3>Pytanie 1</h3>
+			<div class="answer">Odpowiedź 1</div>
+		  </li>
+		  <li>
+			<h3>Pytanie 2</h3>
+			<div class="answer">Odpowiedź 2</div>
+		  </li>
+		  <li>
+			<h3>Pytanie 1</h3>
+			<div class="answer">Odpowiedź 1</div>
+		  </li>
+		  <li>
+			<h3>Pytanie 2</h3>
+			<div class="answer">Odpowiedź 2</div>
+		  </li>
+		  <li>
+			<h3>Pytanie 1</h3>
+			<div class="answer">Odpowiedź 1</div>
+		  </li>
+		  <li>
+			<h3>Pytanie 2</h3>
+			<div class="answer">Odpowiedź 2</div>
+		  </li>
+		<!-- Więcej pytań i odpowiedzi -->
+	  </ul>
+	</section>
+
+
+ <script>
+ const questions = document.querySelectorAll("h3");
+
+questions.forEach(function(question) {
+  question.addEventListener("click", function() {
+    const answer = this.nextElementSibling;
+    answer.classList.toggle("show");
+  });
+});
+  </script>
+</body>
+</html>

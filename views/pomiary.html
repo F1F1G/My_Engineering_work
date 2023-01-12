@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Martian greenhouse project - home</title>
+	<script type=”text/javascript” src=”/javascript/javascript.js”></script>
+	<link rel="stylesheet" href="/style/style2.css">
+  <link rel="icon" href="/gallery/logo.png">
+</head>
+
+
+<body>
+	<!--Header w którym znajduje się cały navbar wraz z logiem stronki--->
+	<header>
+		<img src="/gallery/logo.png" alt="logo">
+		<a href="#" class="logo">Martian greenhouse project</a>
+		<div class="bx bx-menu" id="menu-icon"></div>
+
+		<ul class="navbar">
+			<li><a href="/index.html">Strona Główna</a></li>
+            <li><a href="/views/home.html">Home</a></li>
+			<li><a href="/views/szklarnia.html">O szklarni</a></li>
+			<li><a href="/views/pomiary.html">Pomiary</a></li>
+			<li><a href="/views/wyniki.html">Wyniki</a></li>
+            <li><a href="/views/badania.html">Badania</a></li>
+            <li><a href="/views/kontakt.html">Kontakt</a></li>
+			<li><a href="/views/FAQ.html">FAQ</a></li>
+		</ul>
+	</header>
+
+	<div class="tloPoczatku1" id="home">
+
+		<!--zrobienie tabeli z pomiarami--->
+
+		<div class="charts-container">
+			<h1>Temperatura</h1><br>
+			<div class="container">
+
+				<div class="chart-container box2">
+					<div class="container-img">
+						<img src="img/trip3.png">
+					</div>
+					<h4>Summer Rest</h4>
+					<p>150 Properties</p>
+					<iframe  src="https://thingspeak.com/channels/1983832/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=200&title=LIGHT+INTENSITY&type=line&xaxis=Time&yaxis=Intensity"></iframe>
+				</div>
+	
+				<div class="chart-container box2">
+					<div class="container-img">
+						<img src="img/trip3.png">
+					</div>
+					<h4>Summer Rest</h4>
+					<p>150 Properties</p>
+					<iframe  src="https://thingspeak.com/channels/1983832/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=200&title=LIGHT+INTENSITY&type=line&xaxis=Time&yaxis=Intensity"></iframe>
+				</div>
+	
+				<div class="chart-container box3">
+					<div class="container-img">
+						<img src="img/trip4.png">
+					</div>
+					<h4>Mountains Tours</h4>
+					<p>150 Properties</p>
+					<iframe  src="https://thingspeak.com/channels/1983832/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=200&title=LIGHT+INTENSITY+%28volts%29&type=line&xaxis=Time&yaxis=Intensity+%28v%29"></iframe>
+				</div>
+	
+			</div>
+		</div>
+
+	</div>
+
+		<div class="charts-container">
+			<h1>Wilgotność</h1><br>
+			<div class="container">
+
+	
+				<div class="chart-container box2">
+					<div class="container-img">
+						<img src="img/trip3.png">
+					</div>
+					<h4>Summer Rest</h4>
+					<p>150 Properties</p>
+					<iframe src="https://thingspeak.com/channels/1983832/widgets/584778"></iframe>
+				</div>
+	
+				<div class="chart-container box3">
+					<div class="container-img">
+						<img src="img/trip4.png">
+					</div>
+					<h4>Mountains Tours</h4>
+					<p>150 Properties</p>
+					<iframe  src="https://thingspeak.com/channels/1983832/charts/4?bgcolor=%23ffffff&color=%23d62020&days=1&dynamic=true&results=100&title=Humidity&type=spline&xaxis=Date&yaxis=Humidity&yaxismax=100&yaxismin=0"></iframe>
+				</div>
+	
+			</div>
+		</div>
+
+
+		<script>
+			const header = document.querySelector("header");
+			
+			window.addEventListener("scroll", () => {
+				header.classList.toggle("sticky", window.scrollY > 0);
+			});
+			
+			const menu = document.querySelector("#menu-icon");
+			const navbar = document.querySelector(".navbar");
+			
+			menu.addEventListener("click", () => {
+				menu.classList.toggle("bx-x");
+				navbar.classList.toggle("open");
+			});
+			
+			window.addEventListener("scroll", () => {
+				menu.classList.remove("bx-x");
+				navbar.classList.remove("open");
+			});
+			</script>
+</body>

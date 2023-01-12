@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Martian greenhouse project</title>
+	<script type=”text/javascript” src=”/javascript/javascript.js”></script>
+	<link rel="stylesheet" href="/style/style1.css">
+  <link rel="icon" href="/gallery/logo.png">
+</head>
+
+<body>
+  <!-- Header w którym znajduje się cały navbar wraz z logiem stronki -->
+  <section class="navbar">
+    <header>
+      <h2 class="logo">Martian greenhouse project</h2>
+      <div class="toggleMenu"></div>
+    </header>
+
+
+<!-- wyświetlanie filmu w tle -->
+    <video src="/gallery/BackgroundGreenhouse1.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    
+    
+    <!-- Tytułowy napis strony wraz z jej opisem, poniżej umieszczony button przekierowujący do filmu -->
+    <div class="text">
+      <h2>Badania upraw roślin </h2> 
+      <h3>W marsjańskiej szklarni</h3>
+
+      <p>Spojrzenie na świat z perspektywy młodego człowieka zafascynowanego tym, co otacza naszą planetę ziemie. Projekt próbuje odpowiedzieć na pytania.
+        Czy po dotarciu na marsa, jesteśmy wstanie wykorzystać jego glebę w celu wytworzenia pożywienia ? Jakie warunki muszą zostać spełnione ? Czy to, co zaoferuje nam Mars 
+      wystarczy, aby plony były na tyle obfite, by przetrwać ? W tym celu powstał projekt Martian greenhouse project, który imituje marsjańskie warunki i odpowie na zadane pytania. </p>
+
+      <a href="https://youtu.be/ffhPuZIgXqU">Zobacz Film</a>
+    </div>
+
+
+<!-- Przekierowanie do moich social mediów + copyright -->
+    <ul class="social">
+      <li><a href="https://www.facebook.com/filip.ojczyk/"><img src="/gallery/facebook.png"></a></li>
+      <li><a href="#"><img src="/gallery/twitter.png"></a></li>
+      <li><a href="https://www.youtube.com/channel/UC_EA7YsQ787oebyHb7ionyQ"><img src="/gallery/youtube.png"></a></li>
+      <li><a href="https://www.instagram.com/filippojczyk/"><img src="/gallery/instagram.png"></a></li>
+    </ul>
+
+
+
+    <div class="copyright">Made by Filip Ojczyk</div>
+  </section>
+
+
+<!-- wyświetlanie całego menu schowanego w hamburgerze -->
+  <div class="pageMenu">
+    <ul>
+      <li><a href="/views/home.html">Home</a></li>
+      <li><a href="/views/szklarnia.html">O szklarni</a></li>
+      <li><a href="/views/pomiary.html">Pomiary</a></li>
+      <li><a href="/views/wyniki.html">Wyniki</a></li>
+      <li><a href="/views/badania.html">Badania</a></li>
+      <li><a href="/views/kontakt.html">Kontakt</a></li>
+      <li><a href="/views/FAQ.html">FAQ</a></li>
+    </ul>
+  </div>
+
+
+<!-- wyświetlanie i chowanie całego menu -->
+  <script>
+      const toggleMenu = document.querySelector('.toggleMenu');
+const navbar = document.querySelector('.navbar');
+
+
+
+toggleMenu.addEventListener('click', () => {
+  toggleMenu.classList.toggle('active');
+  navbar.classList.toggle('active');
+}
+)
+  </script>
+</body>
+</html>

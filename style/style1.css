@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  box-sizing: border-box;
+}
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 45px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 15;
+}
+header .logo
+{
+  cursor: pointer;
+  color: rgb(255, 232, 232);
+  text-transform:uppercase;
+}
+.text
+{
+  position: relative;
+  z-index: 10;
+}
+
+.text h2
+{
+  font-size: 5em;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.973);
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text h3
+{
+  font-size: 4em;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.952);
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text p
+{
+  font-size: 1.2em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 740px;
+}
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: rgba(255, 255, 255, 0.562);
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+.text a:hover
+{
+  letter-spacing: 3px;
+}
+.toggleMenu
+{
+  background: url(/gallery/menu.png);
+  cursor: pointer;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-size: 35px;
+  background-position: center;
+}
+.toggleMenu.active
+{
+  background: url(/gallery/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+.navbar
+{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(5, 4, 4, 0.986);
+  transition: 0.5s;
+  z-index: 2;
+}
+.navbar.active
+{
+  right: 320px;
+}
+
+.navbar video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #af8a44c4;
+  mix-blend-mode: overlay;
+}
+
+.social
+{
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li
+{
+  list-style: none;
+  color: rgb(255, 255, 255);
+}
+.social li a
+{
+  display: inline-block;
+  margin-right: 25px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+.social li a:hover
+{
+  transform: scale(0.5) translateY(-20px);
+}
+.copyright{
+  position: absolute;
+  display: flex;
+  z-index: 10;
+  color: rgb(228, 228, 228);
+  text-shadow: 3px 3px 5px black;
+  right: 2vw;
+  bottom: 4vh;
+}
+
+.pageMenu
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 340px;
+  height: 100%;
+  display: flex;
+  text-shadow: 2px 1px 2px #1d1d1d46;
+  justify-content: center;
+  align-items: center;
+}
+.pageMenu ul
+{
+  position: relative;
+  list-style: none;
+}
+.pageMenu ul li a
+{
+  text-decoration: none;
+  font-size: 24px;
+  color: rgb(27, 27, 27);
+}
+.pageMenu ul li a:hover
+{
+  color: #ee8f00; 
+}
+
+@media (max-width: 1208px)
+{
+  .navbar,
+  .navbar header
+  {
+    padding: 40px;
+  }
+  .text h2
+  {
+    font-size: 3em;
+  }
+  .text h3
+  {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 685px)
+{
+  .navbar,
+  .navbar header
+  {
+    padding: 40px;
+  }
+  .text h2
+  {
+    font-size: 2em;
+  }
+  .text h3
+  {
+    font-size: 1.5em;
+  }
+  .text p{
+    font-size: 1.0em;
+  }
+}
+@media (max-width: 512px){
+  .navbar.active
+  {
+    right: 220px;
+  }
+  .menu{
+    width: 240px;
+  }
+  .copyright{
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 407px)
+{
+  .logo{
+    font-size: 1.0em;
+  }
+}
