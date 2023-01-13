@@ -8,6 +8,8 @@
 	<script type=”text/javascript” src=”/javascript/javascript.js”></script>
 	<link rel="stylesheet" href="/style/style2.css">
   <link rel="icon" href="/gallery/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 
 
@@ -32,10 +34,25 @@
 
 	<div class="tloPoczatku1" id="home">
 
+			<!-- <button id="top-btn" class="hidden">⯅</button> -->
+	<button id="top-btn" class="hidden">
+		<i class="fas fa-angle-up"></i>
+	  </button>	
+
+
+	  <section class="container-results">
+		<div class="text">
+			<h2>Warunki panujące w szklarni na żywo </h2>
+			<br>
+		</div>
+		<h4>Podane poniżej pomiary, są odświeżane średnio z częstotliwością 2 pomiarów na minutę... </h4>
+		</section>
+
+
 		<!--zrobienie tabeli z pomiarami--->
 
 		<div class="charts-container">
-			<h1>Temperatura</h1><br>
+			<h1>Na żywo!</h1><br>
 			<div class="container">
 
 				<div class="chart-container box2">
@@ -44,7 +61,7 @@
 					</div>
 					<h4>Summer Rest</h4>
 					<p>150 Properties</p>
-					<iframe  src="https://thingspeak.com/channels/1983832/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=200&title=LIGHT+INTENSITY&type=line&xaxis=Time&yaxis=Intensity"></iframe>
+					<iframe src="https://thingspeak.com/channels/1983832/widgets/584778"></iframe>
 				</div>
 	
 				<div class="chart-container box2">
@@ -53,7 +70,7 @@
 					</div>
 					<h4>Summer Rest</h4>
 					<p>150 Properties</p>
-					<iframe  src="https://thingspeak.com/channels/1983832/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=200&title=LIGHT+INTENSITY&type=line&xaxis=Time&yaxis=Intensity"></iframe>
+					<iframe src="https://thingspeak.com/channels/1983832/widgets/584778"></iframe>
 				</div>
 	
 				<div class="chart-container box3">
@@ -62,14 +79,22 @@
 					</div>
 					<h4>Mountains Tours</h4>
 					<p>150 Properties</p>
-					<iframe  src="https://thingspeak.com/channels/1983832/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=200&title=LIGHT+INTENSITY+%28volts%29&type=line&xaxis=Time&yaxis=Intensity+%28v%29"></iframe>
+					<iframe src="https://thingspeak.com/channels/1983832/widgets/584778"></iframe>
 				</div>
 	
 			</div>
 		</div>
 
+		<section class="container-results1">
+			<div class="text">
+				<h2>Dane z dłuższego okresu czasu <br> warunków pogodowych szklarni </h2>
+				<br>
+			</div>
+			<h4>Podane poniżej pomiary, są odświeżane średnio z częstotliwością 2 pomiarów na minutę... </h4>
+			</section>
+			
 	</div>
-
+	<br><br><br><br><br><br><br><br><br><br>
 		<div class="charts-container">
 			<h1>Wilgotność</h1><br>
 			<div class="container">
@@ -97,6 +122,61 @@
 		</div>
 
 
+
+		<!--footer--->
+		<section id="contact">
+			<div class="footer">
+				<div class="main">
+					<div class="list">
+						<h4>Szybkie linki</h4>
+						<ul>
+							<li><a href="/index.html">Strona główna</a></li>
+							<li><a href="/views/pomiary.html">Pomiary</a></li>
+							<li><a href="/views/wyniki.html">Wyniki</a></li>
+							<li><a href="/views/badania.html">Badania</a></li>
+						</ul>
+					</div>
+
+					<div class="list">
+						<h4>Pomoc</h4>
+						<ul>
+							<li><a href="/views/szklarnia.html">O szklarni</a></li>
+							<li><a href="/views/home.html">Home</a></li>
+							<li><a href="https://www.parp.gov.pl/component/content/article/71109:polityka-prywatnosci-na-stronach-internetowych-jak-wlasciwie-spelnic-obowiazek-informacyjny">Polityka prywatności</a></li>
+							<li><a href="/views/kontakt.html">Kontakt</a></li>
+						</ul>
+					</div>
+	
+					<div class="list">
+						<h4>Dane kontaktowe</h4>
+						<ul>
+							<li><a href="#">Polska, Śląskie</a></li>
+							<li><a href="#">Rybnik, Marokanów 6/5</a></li>
+							<li><a href="#">+48 724 849 351</a></li>
+							<li><a href="#">filip.ojczyk@student.polsl.pl</a></li>
+						</ul>
+					</div>
+	
+					<div class="list">
+						<h4>Social media</h4>
+						<div class="social">
+							<a href="https://www.facebook.com/filip.ojczyk/"><i class='bx bxl-facebook' ></i></a>
+							<a href="https://www.instagram.com/filippojczyk/"><i class='bx bxl-instagram-alt' ></i></a>
+							<a href="https://www.youtube.com/@filipojczyk2345/featured"><i class='bx bxl-youtube' ></i></a>
+							<a href="#"><i class='bx bxl-twitter' ></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="end-text">
+				<p>Copyright ©2023 Wszystkie prawa zastrzeżone | Stworzone przez Filipa Ojczyk</p>
+			</div>
+		</section>
+
+
+
+
 		<script>
 			const header = document.querySelector("header");
 			
@@ -116,5 +196,26 @@
 				menu.classList.remove("bx-x");
 				navbar.classList.remove("open");
 			});
+
+
+
+// pokaż przycisk po przewinięciu w dół
+window.onscroll = function() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("top-btn").classList.remove("hidden");
+  } else {
+    document.getElementById("top-btn").classList.add("hidden");
+  }
+};
+
+// przewiń do góry po kliknięciu przycisku
+document.getElementById("top-btn").onclick = function() {
+  document.body.scrollTop = 0; // dla Safari
+  document.documentElement.scrollTop = 0; // dla Chrome, Firefox, IE and Opera
+};
+
+
+
+
 			</script>
 </body>
